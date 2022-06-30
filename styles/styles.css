@@ -24,7 +24,7 @@ h4,
 h5,
 h6,
 p {
-	margin-top: 0;
+	margin: 0;
 }
 
 body {
@@ -45,8 +45,6 @@ img {
 .section {
 	padding-top: 94px;
 	padding-bottom: 94px;
-	margin-left: auto;
-	margin-right: auto;
 }
 
 .conteiner {
@@ -105,8 +103,6 @@ img {
 }
 .header .conteiner {
 	display: flex;
-	padding: 0;
-	justify-content: space-between;
 }
 .logo {
 	font-family: Raleway, sans-serif;
@@ -131,6 +127,7 @@ img {
 	font-weight: 500;
 	line-height: 1.14;
 	margin-left: 93px;
+	margin-left: auto;
 }
 
 .site-nav .link:hover,
@@ -153,6 +150,7 @@ img {
 	color: var(--secondary-text-color);
 	font-weight: 500;
 	line-height: 1.14;
+	margin-left: auto;
 }
 
 .cont-nav .link:hover,
@@ -173,9 +171,7 @@ img {
 	text-align: center;
 	padding: 0;
 }
-.hero.section {
-	width: 1600px;
-}
+
 .hero .title {
 	color: var(--secondary-text-white);
 	font-weight: 900;
@@ -212,6 +208,7 @@ img {
 	line-height: 1.14;
 	text-transform: uppercase;
 	margin-bottom: 10px;
+	font-size: 14px;
 }
 
 .benefits-list {
@@ -220,14 +217,19 @@ img {
 .benefits-list .item:not(:last-child) {
 	margin-right: 30px;
 }
-
-.benefits .text {
-	line-height: 2;
-	margin: 0;
+.benefits-list .item {
 	width: 270px;
 }
 
+.benefits .text {
+	line-height: 1.7;
+	margin: 0;
+}
+
 /* WHAT WE DO */
+.work {
+	padding-top: 0;
+}
 
 .work .title {
 	text-align: center;
@@ -247,16 +249,13 @@ img {
 /* OUR TEAM */
 .team {
 	background-color: var(--secondary-bg-grey);
-	font-size: 36px;
+
 	text-align: center;
 }
 
 .team .title {
 	margin-bottom: 50px;
-}
-
-.team.section {
-	width: 1600px;
+	font-size: 36px;
 }
 
 .team-list {
@@ -297,10 +296,6 @@ img {
 	padding: 60px 0;
 }
 
-.footer.section {
-	width: 1600px;
-}
-
 .logo-studio {
 	color: var(--secondary-text-white);
 }
@@ -309,10 +304,13 @@ img {
 	text-decoration: none;
 	color: var(--secondary-text-white);
 }
-.address-item {
-	margin: 20px 0 9px 0;
+.address {
+	margin-top: 20px;
 }
 
+.address-item {
+	margin-bottom: 9px;
+}
 .address-mail {
 	margin-bottom: 9px;
 }
@@ -347,7 +345,7 @@ img {
 }
 
 .filtr-list {
-	margin-bottom: 34px;
+	margin-bottom: 50px;
 	display: flex;
 	justify-content: center;
 }
